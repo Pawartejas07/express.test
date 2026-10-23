@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <center>
+        <h2>Edit Blog</h2>
+        <form action="/edit/<%= data._id %>?_method=patch" method="post">
+            Title:
+            <input type="text" name="title" id="" value="<%= data.title %>"><br>
+            Image:
+            <input type="text" name="img" id="" value="<%= data.img %>"><br>
+            Description:
+            <input type="text" name="desc" id="" value="<%= data.desc %>"><br>
+            <button type="submit">Submit</button>
+        </form>
+    </center>
+</body>
+
+</html>
